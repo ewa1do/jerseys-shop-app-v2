@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Navbar } from '../navbar/NavbarScreen';
+import { Navbar } from '../UI/NavbarScreen';
 
 const Hero = styled.header`
   background-image: url('../../../assets/img/hero.jpg');
