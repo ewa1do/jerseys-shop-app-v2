@@ -1,16 +1,13 @@
-export const NavbarScreen = () => {
-  return <div>NavbarScreen</div>;
-};
-import React from 'react';
+import { NavStyled, UlStyled } from './styles.js';
 
 export const Navbar = () => {
   return (
-    <nav>
-      <ul>
+    <NavStyled>
+      <UlStyled>
         <li>Jerseys</li>
         <li>Shoes</li>
         <li>Footballs</li>
-      </ul>
-    </nav>
+      </UlStyled>
+    </NavStyled>
   );
 };

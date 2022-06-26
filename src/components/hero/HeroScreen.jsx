@@ -11,8 +11,8 @@ const Hero = styled.header`
 
 export const HeroScreen = () => {
   return (
-    <Hero>
-      <Navbar />
-    </Hero>
+    <>
+      <h1>Hero</h1>
+    </>
   );
 };

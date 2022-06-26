@@ -1,5 +1,5 @@
-import { HeroScreen } from './components/hero/HeroScreen';
+import { AppRouter } from './routers/AppRouter';
 
 export const App = () => {
-  return <HeroScreen />;
+  return <AppRouter />;
 };
