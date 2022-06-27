@@ -1,21 +1,20 @@
-import { Link } from 'react-router-dom';
-import { NavStyled, UlStyled } from './styles.js';
+import { NavStyled, UlStyled, StyledLink } from './styles.js';
 
 export const Navbar = () => {
   return (
     <NavStyled>
       <UlStyled>
         <li>
-          <Link to='/'>Home</Link>
+          <StyledLink to='/'>Home</StyledLink>
         </li>
         <li>
-          <Link to='/jerseys'>Jerseys</Link>
+          <StyledLink to='/jerseys'>Jerseys</StyledLink>
         </li>
         <li>
-          <Link to='/shoes'>Shoes</Link>
+          <StyledLink to='/shoes'>Shoes</StyledLink>
         </li>
         <li>
-          <Link to='footballs'>Footballs</Link>
+          <StyledLink to='footballs'>Footballs</StyledLink>
         </li>
       </UlStyled>
     </NavStyled>
