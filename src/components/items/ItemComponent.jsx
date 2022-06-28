@@ -1,21 +1,31 @@
+import { useContext } from 'react';
 import { StyledItem } from './styles.js';
+import { v4 as uuid } from 'uuid';
 
-export const ItemComponent = ({
-  url,
-  name,
-  description,
-  league,
-  price,
-  brand,
-}) => {
+import { CartContext } from '../../context/cartContext';
+import { types } from '../../types/types.js';
+
+export const ItemComponent = items => {
+  const { dispatch } = useContext(CartContext);
+
+  const handleShoppingCart = () => {
+    dispatch({
+      type: types.add,
+      payload: {
+        ...items,
+        id: uuid(),
+      },
+    });
+  };
+
   return (
     <StyledItem>
-      <img src={url} />
+      <img src={items.url} />
       <div>
-        <h3>{name}</h3>
-        <h4>{description || brand}</h4>
-        <span>US$ {price}</span>
-        <button>Add To Cart</button>
+        <h3>{items.name}</h3>
+        <h4>{items.description || items.brand}</h4>
+        <span>US$ {items.price}</span>
+        <button onClick={handleShoppingCart}>Add To Cart</button>
       </div>
     </StyledItem>
   );
