@@ -1,5 +1,9 @@
 import React from 'react';
 
 export const ShoesScreen = () => {
-  return <div>ShoesScreen</div>;
+  return (
+    <div>
+      <h2 className='section-title'>Boots</h2>
+    </div>
+  );
 };

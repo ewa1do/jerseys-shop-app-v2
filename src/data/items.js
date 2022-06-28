@@ -1,8 +1,8 @@
 export const jerseysDB = [
   {
-    name: 'Manchester United Jersey 2008-09',
+    name: 'Manchester United Jersey 2021-22',
     description:
-      'Cristiano Ronaldo Home Shirt #7 Season 2008-09',
+      'Cristiano Ronaldo Home Shirt #7 Season 2021-22',
     league: 'Premier League',
     price: 59.99,
     url: '../../assets/img/cr7.jpg',

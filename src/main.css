@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main: #d9e4dd;
+  --secondary: #fbf7f0;
+  --shadows: #cdc9c3;
+  --contrast: #555555;
+  --complement: #f24c4c;
+}
+
 html {
   font-size: 62.5%;
   font-family: 'Montserrat', sans-serif;
@@ -12,4 +20,22 @@ html {
 
 ul {
   list-style: none;
+}
+
+.section-title {
+  font-size: 5rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 3rem 0;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  border-bottom: 2px solid var(--complement);
+  top: 0;
+  width: 22%;
+  left: 39%;
+  bottom: 0;
 }

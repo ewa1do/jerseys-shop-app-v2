@@ -11,7 +11,7 @@ export const Navbar = () => {
           <StyledLink to='/jerseys'>Jerseys</StyledLink>
         </li>
         <li>
-          <StyledLink to='/shoes'>Shoes</StyledLink>
+          <StyledLink to='/shoes'>Boots</StyledLink>
         </li>
         <li>
           <StyledLink to='footballs'>Footballs</StyledLink>

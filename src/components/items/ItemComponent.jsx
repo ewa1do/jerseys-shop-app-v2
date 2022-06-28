@@ -13,7 +13,7 @@ export const ItemComponent = ({
       <div>
         <h3>{name}</h3>
         <h4>{description}</h4>
-        <span className='span-price'>US$ {price}</span>
+        <span>US$ {price}</span>
         <button>Add To Cart</button>
       </div>
     </StyledItem>
