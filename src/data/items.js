@@ -44,3 +44,42 @@ export const jerseysDB = [
     url: '../../assets/img/neymar.jpg',
   },
 ];
+
+export const bootsItems = [
+  {
+    name: 'Nike Mercurial Vapor 14 Elite AG-PRO Impulse - Dynamic Turq/Lime Glow',
+    brand: 'Nike',
+    price: 219.99,
+    url: '../../assets/img/boot-nike-1.jpg',
+  },
+  {
+    name: 'adidas X Speedflow .1 FG Champions Code - Purple Rush/Silver Metallic/Mint Rush',
+    brand: 'Adidas',
+    price: 219.99,
+    url: '../../assets/img/boot-adidas-1.jpg',
+  },
+  {
+    name: 'Nike Phantom GT 2 Elite FG Recharge - Sapphire/Volt/Grey Fog/Blue Void',
+    brand: 'Nike',
+    price: 161.99,
+    url: '../../assets/img/boot-nike-2.jpg',
+  },
+  {
+    name: 'Nike Tiempo Legend 9 Elite FG Renew - Black/Iron Grey',
+    brand: 'Nike',
+    price: 160.99,
+    url: '../../assets/img/boot-nike-3.jpg',
+  },
+  {
+    name: 'adidas Predator Freak .1 FG/AG Superspectral - Core Black/Footwear White/Shock Pink Kids',
+    brand: 'Adidas',
+    price: 49.99,
+    url: '../../assets/img/boot-adidas-2.jpg',
+  },
+  {
+    name: 'PUMA Ultra 1.4 FG/AG Eclipse - PUMA Black/PUMA White/Fizzy Lime',
+    brand: 'Puma',
+    price: 199.99,
+    url: '../../assets/img/boot-puma-1.jpg',
+  },
+];
