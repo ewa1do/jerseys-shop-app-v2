@@ -5,6 +5,9 @@ export const cartReducer = (state = [], action) => {
     case types.add:
       return [...state, action.payload];
 
+    case types.delete:
+      return state.filter(item => item.id !== action.payload);
+
     default:
       return state;
   }

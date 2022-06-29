@@ -11,15 +11,19 @@ export const CartScreen = () => {
     <div>
       <h2 className='section-title'>Cart</h2>
 
-      <ul>
-        {cart.map(items => {
-          return (
-            <StyledItem key={items.id}>
-              <CartItem {...items} />
-            </StyledItem>
-          );
-        })}
-      </ul>
+      {cart.length > 0 ? (
+        <ul>
+          {cart.map(items => {
+            return (
+              <StyledItem key={items.id}>
+                <CartItem {...items} />
+              </StyledItem>
+            );
+          })}
+        </ul>
+      ) : (
+        <h3>Wow such empty, add some items!</h3>
+      )}
     </div>
   );
 };

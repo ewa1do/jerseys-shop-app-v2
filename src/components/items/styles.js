@@ -31,6 +31,11 @@ export const StyledItem = styled.li`
     font-weight: 400;
   }
 
+  & h5 {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
   & span {
     font-size: 2rem;
     margin-top: 3rem;
