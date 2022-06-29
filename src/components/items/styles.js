@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const StyledItem = styled.li`
   display: flex;
   padding: 2rem;
-  border: 1px solid #333;
-  border-radius: 4px;
+  border-bottom: 1px solid #333;
+  /* border-radius: 4px; */
   margin: 2rem 0.5rem 1rem 0.5rem;
 
   & * {
@@ -56,4 +56,15 @@ export const StyledItem = styled.li`
       background-color: #d9e4dd;
     }
   }
+`;
+
+export const EmptyContentH3 = styled.h3`
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 19rem;
+  font-size: 3rem;
+  font-weight: 400;
+  border: 1px solid darkgray;
+  padding: 2rem;
+  width: fit-content;
 `;

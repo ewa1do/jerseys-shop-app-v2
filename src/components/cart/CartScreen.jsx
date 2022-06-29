@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { StyledItem } from '../items/styles';
+import { StyledItem, EmptyContentH3 } from '../items/styles';
 
 import { CartContext } from '../../context/cartContext.js';
 import { CartItem } from './CartItem';
@@ -31,7 +31,9 @@ export const CartScreen = () => {
           <h3>Total: {result.toFixed(2)}</h3>
         </>
       ) : (
-        <h3>Wow such empty, add some items!</h3>
+        <EmptyContentH3>
+          Wow such empty, add some items!
+        </EmptyContentH3>
       )}
     </div>
   );
