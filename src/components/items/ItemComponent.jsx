@@ -6,7 +6,7 @@ import { CartContext } from '../../context/cartContext';
 import { types } from '../../types/types.js';
 
 export const ItemComponent = items => {
-  const { cart, dispatch } = useContext(CartContext);
+  const { dispatch } = useContext(CartContext);
 
   const handleShoppingCart = () => {
     dispatch({
@@ -24,6 +24,7 @@ export const ItemComponent = items => {
       <div>
         <h3>{items.name}</h3>
         <h4>{items.description || items.brand}</h4>
+        {items.league && <h5>{items.league}</h5>}
         <span>US$ {items.price}</span>
         <button onClick={handleShoppingCart}>Add To Cart</button>
       </div>
