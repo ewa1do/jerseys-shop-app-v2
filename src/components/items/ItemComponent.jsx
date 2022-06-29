@@ -6,7 +6,7 @@ import { CartContext } from '../../context/cartContext';
 import { types } from '../../types/types.js';
 
 export const ItemComponent = items => {
-  const { dispatch } = useContext(CartContext);
+  const { cart, dispatch } = useContext(CartContext);
 
   const handleShoppingCart = () => {
     dispatch({

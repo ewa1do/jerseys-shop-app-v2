@@ -83,3 +83,36 @@ export const bootsItems = [
     url: '../../assets/img/boot-puma-1.jpg',
   },
 ];
+
+export const ballsItems = [
+  {
+    name: 'adidas Champions League UCL Pro 2022-2023 Ball',
+    brand: 'Adidas',
+    price: 142.99,
+    url: '../../assets/img/ball-1.webp',
+  },
+  {
+    name: 'Puma LaLiga 1 Orbita (FIFA Quality Pro) 2022-2023 Box Ball',
+    brand: 'Puma',
+    price: 134.99,
+    url: '../../assets/img/ball-2.webp',
+  },
+  {
+    name: 'adidas FIFA World Cup Qatar 2022 Club Ball',
+    brand: 'Adidas',
+    price: 21.99,
+    url: '../../assets/img/ball-3.webp',
+  },
+  {
+    name: 'adidas Starlancer Training Ball',
+    brand: 'Adidas',
+    price: 21.99,
+    url: '../../assets/img/ball-4.webp',
+  },
+  {
+    name: 'New Balance Geodesa Match Ball ',
+    brand: 'New Balance',
+    price: 22.99,
+    url: '../../assets/img/ball-5.webp',
+  },
+];

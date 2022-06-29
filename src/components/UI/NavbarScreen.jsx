@@ -14,7 +14,10 @@ export const Navbar = () => {
           <StyledLink to='/shoes'>Boots</StyledLink>
         </li>
         <li>
-          <StyledLink to='footballs'>Footballs</StyledLink>
+          <StyledLink to='/footballs'>Footballs</StyledLink>
+        </li>
+        <li>
+          <StyledLink to='/cart'>Cart</StyledLink>
         </li>
       </UlStyled>
     </NavStyled>

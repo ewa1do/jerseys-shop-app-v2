@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import { CartScreen } from '../components/cart/cartScreen';
 import { FootballsScreen } from '../components/footballs/FootballsScreen';
 import { HeroScreen } from '../components/hero/HeroScreen';
 import { JerseysScreen } from '../components/jerseys/JerseysScreen';
@@ -27,6 +28,10 @@ export const AppRouter = () => {
           <Route
             path='/footballs'
             element={<FootballsScreen />}
+          />
+          <Route
+            path='/cart'
+            element={<CartScreen />}
           />
         </Routes>
       </BrowserRouter>
