@@ -1,4 +1,5 @@
 import React from 'react';
+import { LayoutScreen } from '../layout/LayoutScreen';
 import { Navbar } from '../UI/NavbarScreen';
 import { HeroTitle } from './HeroTitle';
 
@@ -11,6 +12,8 @@ export const HeroScreen = () => {
         <Navbar />
         <HeroTitle />
       </Hero>
+
+      <LayoutScreen />
     </>
   );
 };
