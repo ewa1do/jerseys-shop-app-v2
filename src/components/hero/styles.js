@@ -9,14 +9,19 @@ export const Hero = styled.header`
     url('../../../assets/img/hero-2.jpg');
   background-position: center;
   background-size: cover;
-  align-items: center;
   height: 100vh;
-  justify-content: center;
   display: flex;
+  flex-direction: column;
 `;
 
 export const StyledTitle = styled.div`
   color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20rem;
 
   & * {
     padding: 0.3rem 0;
@@ -50,7 +55,7 @@ export const StyledTitle = styled.div`
 
   & h4 {
     font-size: 2rem;
-    text-align: right;
+    margin-left: 40%;
   }
 
   & button {
@@ -62,7 +67,6 @@ export const StyledTitle = styled.div`
     cursor: pointer;
     font-size: 1.6rem;
     font-weight: 400;
-    margin-left: 35%;
     margin-top: 10rem;
     padding: 1.3rem 5rem;
     transition: all 0.3s ease;

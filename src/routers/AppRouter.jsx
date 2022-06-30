@@ -11,7 +11,7 @@ export const AppRouter = () => {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
           <Route
             path='/'
