@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { StyledUl } from './styles.js';
+import { StyledUl, StyledTitle } from './styles.js';
 
 import {
   jerseysDB,
@@ -26,6 +26,7 @@ export const LayoutScreen = () => {
 
   return (
     <div>
+      <StyledTitle>Most Selled Items</StyledTitle>
       <nav>
         <StyledUl onClick={handleItemsReturnedByClick}>
           <li>
