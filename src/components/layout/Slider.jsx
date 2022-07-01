@@ -1,12 +1,13 @@
 import { v4 as uuid } from 'uuid';
-
 import styled from 'styled-components';
+
+import { SliderItemComponent } from './SliderItem';
 
 const StyledSlider = styled.div`
   display: flex;
   margin: 5rem 0;
   width: 60%;
-  margin-left: 10%;
+  margin-left: 20%;
 
   & * {
     padding: 0 2rem;
@@ -25,11 +26,7 @@ export const Slider = ({ items }) => {
       {items.map(item => {
         return (
           <SliderItem key={uuid()}>
-            <img src={item.url} />
-            <h3>{item.name}</h3>
-            <h4>{item.description || item.brand}</h4>
-            {item.league && <h5>{item.league}</h5>}
-            <span>US$ {item.price}</span>
+            <SliderItemComponent {...item} />
           </SliderItem>
         );
       })}

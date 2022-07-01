@@ -7,6 +7,8 @@ import { CartItem } from './CartItem';
 export const CartScreen = () => {
   const { cart } = useContext(CartContext);
 
+  console.log(cart);
+
   const handleTotalCartPrice = () => {
     return cart.reduce((acc, item) => acc + item.price, 0) || '';
   };
@@ -28,7 +30,7 @@ export const CartScreen = () => {
               );
             })}
           </ul>
-          <h3>Total: {result.toFixed(2)}</h3>
+          <h3>Total: {result}</h3>
         </>
       ) : (
         <EmptyContentH3>
