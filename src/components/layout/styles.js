@@ -93,7 +93,6 @@ export const SliderItem = styled.div`
   }
 
   & button:hover {
-    background-color: transparent;
-    border: 1px solid rgba(var(--complement-rgb), 0.8);
+    background: transparent;
   }
 `;
