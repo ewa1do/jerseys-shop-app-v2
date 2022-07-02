@@ -2,17 +2,13 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const NavStyled = styled.nav`
-  /* background-color: #2c3e50; */
-  background-color: transparent;
   padding: 1rem 0;
-  margin-top: 1rem;
-  /* box-shadow: 0 10px 5px #fff; */
+  background-color: #2c3e50;
 `;
 
 export const UlStyled = styled.ul`
   display: flex;
   justify-content: space-between;
-  /* padding: 0 5rem; */
 
   & div {
     display: flex;

@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { StyledItem, EmptyContentH3 } from '../items/styles';
 
+import { Navbar } from '../UI/NavbarScreen';
 import { CartContext } from '../../context/cartContext.js';
 import { CartItem } from './CartItem';
 
@@ -15,6 +16,7 @@ export const CartScreen = () => {
 
   return (
     <div>
+      <Navbar />
       <h2 className='section-title'>Cart</h2>
 
       {cart.length > 0 ? (
