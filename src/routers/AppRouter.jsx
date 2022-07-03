@@ -4,6 +4,7 @@ import { CartScreen } from '../components/cart/cartScreen';
 import { FootballsScreen } from '../components/footballs/FootballsScreen';
 import { HeroScreen } from '../components/hero/HeroScreen';
 import { JerseysScreen } from '../components/jerseys/JerseysScreen';
+import { PaymentScreen } from '../components/payment/PaymentScreen';
 import { ShoesScreen } from '../components/shoes/ShoesScreen';
 import { Navbar } from '../components/UI/NavbarScreen';
 
@@ -32,6 +33,10 @@ export const AppRouter = () => {
           <Route
             path='/cart'
             element={<CartScreen />}
+          />
+          <Route
+            path='/payment'
+            element={<PaymentScreen />}
           />
         </Routes>
       </BrowserRouter>

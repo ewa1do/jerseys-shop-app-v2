@@ -1,4 +1,6 @@
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
+
 import { StyledItem, EmptyContentH3 } from '../items/styles';
 
 import { Navbar } from '../UI/NavbarScreen';
@@ -12,7 +14,7 @@ export const CartScreen = () => {
     return cart.reduce((acc, item) => acc + item.price, 0) || '';
   };
 
-  const result = handleTotalCartPrice();
+  const result = handleTotalCartPrice().toFixed(2);
 
   return (
     <div>
@@ -30,7 +32,15 @@ export const CartScreen = () => {
               );
             })}
           </ul>
-          <h3>Total: {result}</h3>
+          <h3>Total: {`USD: ${result}`}</h3>
+          <button>
+            <Link
+              to='/payment'
+              state={{ total: result }}
+            >
+              Go pay it!
+            </Link>
+          </button>
         </>
       ) : (
         <EmptyContentH3>
