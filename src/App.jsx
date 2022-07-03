@@ -1,8 +1,9 @@
 import { useEffect, useReducer } from 'react';
+
 import { CartContext } from './context/cartContext';
 import { cartReducer } from './context/cartReducer';
-
 import { AppRouter } from './routers/AppRouter';
+import { GlobalStyle } from './globalStyles';
 
 const init = () => {
   // return (
@@ -32,6 +33,7 @@ export const App = () => {
       }}
     >
       <AppRouter />
+      <GlobalStyle />
     </CartContext.Provider>
   );
 };
