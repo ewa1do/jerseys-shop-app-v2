@@ -1,10 +1,11 @@
 import { IoCartOutline, IoHomeOutline } from 'react-icons/io5';
 
 import { NavStyled, UlStyled, StyledLink } from './styles.js';
+import './styles.css';
 
-export const Navbar = () => {
+export const Navbar = ({ background }) => {
   return (
-    <NavStyled>
+    <nav className={background || ''}>
       <UlStyled>
         <div>
           <li className='icon'>
@@ -32,6 +33,6 @@ export const Navbar = () => {
           </li>
         </div>
       </UlStyled>
-    </NavStyled>
+    </nav>
   );
 };

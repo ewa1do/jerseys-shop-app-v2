@@ -9,7 +9,7 @@ export const HeroScreen = () => {
   return (
     <>
       <Hero>
-        <Navbar />
+        <Navbar background='transparent' />
         <HeroTitle />
       </Hero>
 

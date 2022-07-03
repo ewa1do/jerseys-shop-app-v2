@@ -27,7 +27,7 @@ export const LayoutScreen = () => {
   return (
     <div>
       <StyledTitle>Most Selled Items</StyledTitle>
-      <nav>
+      <ul>
         <StyledUl onClick={handleItemsReturnedByClick}>
           <li>
             <span datatype={JSON.stringify(jerseysDB)}>
@@ -45,7 +45,7 @@ export const LayoutScreen = () => {
             </span>
           </li>
         </StyledUl>
-      </nav>
+      </ul>
 
       <Slider items={items} />
     </div>
