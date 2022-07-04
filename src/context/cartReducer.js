@@ -8,6 +8,9 @@ export const cartReducer = (state = [], action) => {
     case types.delete:
       return state.filter(item => item.id !== action.payload);
 
+    case types.clear:
+      return (state = []);
+
     default:
       return state;
   }
