@@ -14,7 +14,7 @@ export const CartScreen = () => {
     return cart.reduce((acc, item) => acc + item.price, 0) || '';
   };
 
-  const result = handleTotalCartPrice().toFixed(2);
+  const result = handleTotalCartPrice();
 
   return (
     <div>

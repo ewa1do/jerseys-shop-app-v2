@@ -1,6 +1,8 @@
+import { StyledForm } from './styles.js';
+
 export const PaymentForm = () => {
   return (
-    <form>
+    <StyledForm>
       <div>
         <label>Full Name</label>
         <input type='text' />
@@ -9,18 +11,24 @@ export const PaymentForm = () => {
         <label>Email Address</label>
         <input type='email' />
       </div>
-      <div>
+      <div className='card-details'>
         <h5>Debit/Credit Card</h5>
 
-        <label>Card Number</label>
-        <input type='text' />
+        <div>
+          <label>Card Number</label>
+          <input type='text' />
+        </div>
 
-        <label>MM/YY</label>
-        <input type='text' />
+        <div>
+          <label>MM/YY</label>
+          <input type='text' />
+        </div>
 
-        <label>Security code</label>
-        <input type='text' />
+        <div>
+          <label>Security code</label>
+          <input type='text' />
+        </div>
       </div>
-    </form>
+    </StyledForm>
   );
 };
