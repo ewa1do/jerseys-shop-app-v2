@@ -1,7 +1,9 @@
 import React from 'react';
+
+import { FooterScreen } from '../footer/FooterScreen';
+import { HeroTitle } from './HeroTitle';
 import { LayoutScreen } from '../layout/LayoutScreen';
 import { Navbar } from '../UI/NavbarScreen';
-import { HeroTitle } from './HeroTitle';
 
 import { Hero } from './styles.js';
 
@@ -14,6 +16,7 @@ export const HeroScreen = () => {
       </Hero>
 
       <LayoutScreen />
+      <FooterScreen />
     </>
   );
 };

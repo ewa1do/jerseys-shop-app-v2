@@ -25,6 +25,10 @@ html {
   background: #edf2ef;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 ul {
   list-style: none;
 }
